@@ -80,7 +80,7 @@
 			allDaySlot: false,
 			selectHelper: true,
 			select: function(start, end, allDay) {
-				var title = prompt('Nome do Evento:');
+				var title = prompt('Nome de Evento:');
 				if (title) {
 					calendar.fullCalendar('renderEvent',
 						{
@@ -121,14 +121,13 @@
 
 			events: [
 				{
-					title: 'All Day Event',
-					start: new Date(y, m, 1)
+					title: 'Christmas',
+					start: new Date(2023, 12, 23)
 				},
 				{
 					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
-					allDay: false,
+					title: 'easter',
+					start: new Date(2024, 3, 20),
 					className: 'info'
 				},
 				{
