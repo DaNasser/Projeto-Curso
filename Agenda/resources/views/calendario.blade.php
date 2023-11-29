@@ -234,7 +234,35 @@
 
 <div id='calendar'></div>
 
-<div style='clear:both'></div>
+<div style='clear:both'></div>	
+
+<form method="post" action="{{route('criar' )}}">
+	@csrf
+			<div class="tamanho">
+			<div class="form-group">
+			<label for="exampleInputEmail1">NOME TAREFA</label>
+			<input class="form-control" name="nome"  placeholder="nome">
+			</div>
+
+			<div class="form-group">
+			<label for="exampleInputEmail1">DATA</label>
+			<input class="form-control"  placeholder="data" name="data">
+			</div> 
+
+		
+	   
+			
+			<label>Nome:
+			<input name="nome" type="text" class="form-control" id="nome" size="60" /></label><br />
+			<label>Data:
+			<input name="data" type="text " class="form-control" id="data" size="60" /></label><br />
+
+	 
+	  
+		<!--butão pra salvar-->
+		<button type="submit" class="btn btn-primary">Salvar</button>
+	  </form>
+	</div>
 </div>
 
 
