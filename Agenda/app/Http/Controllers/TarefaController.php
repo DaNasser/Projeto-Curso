@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CalendarioController extends Controller
+class TarefaController extends Controller
 {
-     /**
+        /**
      * Create a new controller instance.
      *
      * @return void
@@ -21,8 +21,8 @@ class CalendarioController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function calendario()
+    public function tarefa()
     {
-        return view('calendario');
+        return view('tarefa');
     }
 }
