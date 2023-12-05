@@ -39,7 +39,7 @@ html .fc,
 }
 
 .fc-header-left {
-	width: 25%;
+	width: 5%;
 	text-align: left;
 }
 	
@@ -67,7 +67,7 @@ html .fc,
 }
 	
 .fc .fc-header-space {
-	padding-left: 10px;
+	padding-left: 180px;
 	}
 	
 .fc-header .fc-button {
@@ -78,7 +78,7 @@ html .fc,
 /* buttons edges butting together */
 
 .fc-header .fc-button {
-	margin-right: -1px;
+	margin-right: -1.05px;
 	}
 	
 .fc-header .fc-corner-right,  /* non-theme */
@@ -211,7 +211,7 @@ html .fc,
 
 
 .fc-state-default {
-	border-color: #ff3b30;
+	border-color: #ff3737;
 	color: #ff3b30;	
 }
 .fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default{
@@ -650,9 +650,17 @@ table.fc-header{
     background-color:  #ff3b30;
 }
 .fc-button-today{
-    border: 1px solid rgba(255,255,255,.0);
+    border: 1px solid rgba(255,255,255,.0); 
+	position: absolute;
+	left: 70.5%;
 }
 .fc-view-agendaDay thead tr.fc-first .fc-widget-header{
     text-align: right;
     padding-right: 10px;
+}
+
+.fc-button-config{
+	border: 1px solid rgba(255,255,255,.0); 
+	position: absolute;
+	left: 75.5%;
 }

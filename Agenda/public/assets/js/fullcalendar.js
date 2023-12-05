@@ -73,7 +73,8 @@ var defaults = {
 		today: 'Hoje',
 		month: 'Mês',
 		week: 'Semana',
-		day: 'Dia'
+		day: 'Dia',
+		add: 'Tarefa'
 	},
 	
 	// jquery-ui theming
