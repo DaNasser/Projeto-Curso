@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use App\Models\tarefa;
 
 class Controller extends BaseController
 {
@@ -20,6 +21,8 @@ class Controller extends BaseController
         $tarefa->nome = $request->input("nome");
         $tarefa->data = $request->input("data");
         $tarefa->save();
+        return redirect("calendario") -> with("sucesso","Tarefa cadastrada com sucesso");
+
 
     }
 }

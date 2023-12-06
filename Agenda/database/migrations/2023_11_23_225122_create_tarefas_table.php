@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('tarefas', function (Blueprint $table) {
             $table->id();
-            $table->nome();
-            $table->data();
+            $table->string('nome');
+            $table->datetime('data');
             $table->timestamps();
         });
     }

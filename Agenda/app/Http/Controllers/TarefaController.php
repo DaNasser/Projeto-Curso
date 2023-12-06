@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TarefaController extends Controller
 {
-        /**
+    /**
      * Create a new controller instance.
      *
      * @return void
@@ -21,8 +21,8 @@ class TarefaController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function tarefa()
+    public function Tarefa()
     {
         return view('tarefa');
-    }
+    } 
 }
