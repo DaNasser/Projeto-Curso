@@ -19,10 +19,6 @@ use App\Http\Controllers\Tarefa;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');

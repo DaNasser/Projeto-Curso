@@ -104,27 +104,16 @@ h1 {
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" name="email">
                 <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
                 </div>
-                <div class="form-group">
-                <label for="exampleInputEmail1">TELEFONE</label>
-                <input class="form-control"  placeholder="telefone" name="telefone">
-                </div> 
+ 
 
             
            
-                <label>Cep:
-                <input name="cep" type="text" class="form-control" id="cep" value="" size="60" maxlength="60"
+                <label>Nome:
+                <input name="nome" type="text" class="form-control" id="nome" value="" size="60" maxlength="60"
                        onblur="pesquisacep(this.value);" /></label><br />
-                <label>Rua:
-                <input name="rua" type="text" class="form-control"  id="rua" size="60" /></label><br />
-                <label>Bairro:
-                <input name="bairro" type="text" class="form-control" id="bairro" size="60" /></label><br />
-                <label>Cidade:
-                <input name="cidade" type="text" class="form-control" id="cidade" size="60" /></label><br />
-                <label>Estado:
-                <input name="uf" type="text" class="form-control" id="uf" size="60" /></label><br />
+                <label>Dia:
+                <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
 
-         
-          
             <!--butão pra salvar-->
             <button type="submit" class="btn btn-primary">Salvar</button>
           </form>
