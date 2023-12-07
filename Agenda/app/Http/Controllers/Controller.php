@@ -6,7 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use App\Models\tarefa;
+use App\Models\Tarefa;
 
 class Controller extends BaseController
 {
@@ -14,15 +14,22 @@ class Controller extends BaseController
     public function criartarefa(){
         return view("calendario");
     }
+
+
+
     public function tarefa(Request $request){
 
-        
-        $tarefa = new Tarefa();
-        $tarefa->nome = $request->input("nome");
-        $tarefa->data = $request->input("data");
-        $tarefa->save();
+         ($request->input('nome'));
+        $tarefas = new Tarefa();
+        $tarefas->nome = $request->input('nome');
+        $tarefas->data = $request->input('data');
+        $tarefas->save();
         return redirect("calendario") -> with("sucesso","Tarefa cadastrada com sucesso");
 
 
     }
+    public function tarefateste()
+    {
+        return view('tarefa');
+    } 
 }
