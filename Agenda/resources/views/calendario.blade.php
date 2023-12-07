@@ -12,6 +12,8 @@
 <script src='assets/js/jquery-1.10.2.js' type="text/javascript"></script>
 <script src='assets/js/jquery-ui.custom.min.js' type="text/javascript"></script>
 <script src='assets/js/fullcalendar.js' type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script>
 
 	$(document).ready(function() {
@@ -227,6 +229,12 @@
         box-shadow: 0 1px 2px #C3C3C3;
 		}
 
+		.salvar{
+		margin-top:1%; 
+		margin-left: 10%; 
+		margin-right: 500%;
+		}
+
 </style>
 </head>
 <body>
@@ -238,7 +246,16 @@
 
 
 </div>
+<label class= "Salvar">
+	<button type="button" class="btn btn-outline-danger">Salvar</button>
+</label>
 
+</div>
+<button type="button" class="btn btn-outline-dark">Sair</button>
+<div>
+</label>
+
+</div>
 
 </body>
 </html>
