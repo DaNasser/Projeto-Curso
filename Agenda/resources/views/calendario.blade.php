@@ -247,11 +247,11 @@
 
 </div>
 <label class= "Salvar">
-	<button type="button" class="btn btn-outline-danger">Salvar</button>
+	<button type="button" class="btn btn-outline-danger">Adicionar Tarefa</button>
 </label>
 
 </div>
-<button type="button" class="btn btn-outline-dark">Sair</button>
+<a href= 'http://127.0.0.1:8000/logout'><button type="button" class="btn btn-outline-dark">Sair</button></a>
 <div>
 </label>
 
