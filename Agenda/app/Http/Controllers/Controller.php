@@ -14,9 +14,12 @@ class Controller extends BaseController
     public function criartarefa(){
         return view("calendario");
     }
+
+
+
     public function tarefa(Request $request){
 
-        
+         ($request->input('nome'));
         $tarefas = new Tarefa();
         $tarefas->nome = $request->input('nome');
         $tarefas->data = $request->input('data');
@@ -25,4 +28,8 @@ class Controller extends BaseController
 
 
     }
+    public function tarefateste()
+    {
+        return view('tarefa');
+    } 
 }

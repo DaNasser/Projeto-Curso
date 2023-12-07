@@ -24,4 +24,5 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('calendario', [CalendarioController::class, 'calendario'])->name('calendario');
 
-Route::get('criar/tarefa',[Controller::class,'tarefa'])->name('tarefa');
+Route::get('criar/tarefa',[Controller::class,'tarefateste'])->name('tarefa');
+Route::post('criar',[Controller::class,'tarefa'])->name('criar');
