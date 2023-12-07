@@ -71,9 +71,9 @@ var defaults = {
 		prevYear: "<span class='fc-text-arrow'>&laquo;</span>",
 		nextYear: "<span class='fc-text-arrow'>&raquo;</span>",
 		today: 'Hoje',
-		month: 'month',
-		week: 'week',
-		day: 'day'
+		month: 'Mês',
+		week: 'Semana',
+		day: 'Dia'
 	},
 	
 	// jquery-ui theming
