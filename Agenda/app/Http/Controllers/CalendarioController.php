@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class CalendarioController extends Controller
 {
-     /**
+    /**
      * Create a new controller instance.
      *
      * @return void
@@ -15,7 +15,6 @@ class CalendarioController extends Controller
     {
         $this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -25,4 +24,5 @@ class CalendarioController extends Controller
     {
         return view('calendario');
     }
+    
 }
