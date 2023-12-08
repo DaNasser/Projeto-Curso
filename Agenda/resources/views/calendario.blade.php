@@ -247,11 +247,11 @@
 
 </div>
 <label class= "Salvar">
-	<button type="button" class="btn btn-outline-danger">Adicionar Tarefa</button>
+	<a href= 'http://127.0.0.1:8000/criar/tarefa'><button type="button" class="btn btn-outline-danger">Adicionar Tarefa</button></a>
 </label>
 
 </div>
-<a href= 'http://127.0.0.1:8000/logout'><button type="button" class="btn btn-outline-dark">Sair</button></a>
+<a href= "{{route('logout')}}"><button type="button" class="btn btn-outline-dark">Sair</button></a>
 <div>
 </label>
 

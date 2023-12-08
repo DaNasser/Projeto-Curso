@@ -6,6 +6,8 @@ use App\Http\Controllers\CalendarioController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TarefaController;
 use App\Http\Controllers\Tarefa;
+use App\Http\Controllers\Auth\LoginController;
+
 
 
 /*
@@ -26,4 +28,4 @@ Route::get('calendario', [CalendarioController::class, 'calendario'])->name('cal
 
 Route::get('criar/tarefa',[Controller::class,'tarefateste'])->name('tarefa');
 Route::post('criar',[Controller::class,'tarefa'])->name('criar');
-
+Route::get('logout',[LoginController::class,'construct'])->name('logout');
