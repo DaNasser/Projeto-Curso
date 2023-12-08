@@ -24,7 +24,7 @@ use App\Http\Controllers\Auth\LoginController;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('calendario', [CalendarioController::class, 'calendario'])->name('calendario');
+Route::get('calendario', [CalendarioController::class, 'calendario'])->name('home');
 
 Route::get('criar/tarefa',[Controller::class,'tarefateste'])->name('tarefa');
 Route::post('criar',[Controller::class,'tarefa'])->name('criar');

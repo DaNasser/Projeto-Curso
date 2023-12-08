@@ -29,7 +29,7 @@ body {
  
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    background-image: linear-gradient(-60deg, rgb(112, 45, 45) 50%, rgb(247, 56, 56) 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -121,7 +121,7 @@ h1 {
 
             <!--butão pra salvar-->
             <label class='botao'>
-                <button type="submit" class="btn btn-primary">Salvar</button>
+                <a href="http://127.0.0.1:8000/calendario"><button type="button" class="btn btn-light">Salvar</button></a>
             </label>
           </form>
         </div>
