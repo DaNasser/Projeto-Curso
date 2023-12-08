@@ -75,6 +75,25 @@ h1 {
     }
 }
 
+.nome {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+
+.data {
+    position: absolute;
+    left: 35%;
+    top:38%
+    
+}
+.botao {
+    position: absolute;
+    left: 35%;
+    top: 47%
+    
+}
+
             </style>
     
 </head> 
@@ -93,29 +112,17 @@ h1 {
     
         <form method="post" action="{{route('criar' )}}">
         @csrf
-                <div class="tamanho">
-                <div class="form-group">
-                <label for="exampleInputEmail1">NOME COMPLETO</label>
-                <input class="form-control" name="nome"  placeholder="nome">
-                </div>
 
-                <div class="form-group">
-                <label for="exampleInputEmail1">EMAIL</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" name="email">
-                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-                </div>
- 
-
-            
-           
-                <label>Nome:
+                <label class='nome'> Nome da Tarefa
                 <input name="nome" type="text" class="form-control" id="nome" value="" size="60" maxlength="60"
                        onblur="pesquisacep(this.value);" /></label><br />
-                <label>Dia:
+                <label class='data'>Dia:
                 <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
 
             <!--butão pra salvar-->
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <label class='botao'>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </label>
           </form>
         </div>
     </body>
