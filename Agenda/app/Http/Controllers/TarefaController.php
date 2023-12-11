@@ -45,5 +45,4 @@ public function update(Request $requer,$id){
     $tarefa->delete();
 
    }
-
 }
