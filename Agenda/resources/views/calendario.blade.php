@@ -21,15 +21,17 @@
                     <th scope="col">Tarefa</th>
                     <th scope="col">Data</th>
                     <th scope="col">Grau de Prioridade</th>
-					<th scope="col">Status da Tarefa</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($tarefa as $tarefa)	
+                @foreach ($tarefa as $tarefa)
+                <tr>
+                <th scope="row">{{$tarefa->id}}</th>	
                 <td>{{$tarefa->nome}}</td> 
                 <td>{{$tarefa->data}}</td> 
                 <td>{{$tarefa->grau_de_prioridade}}</td> 
+
                 <td>{{$tarefa->status}}</td> 
 
 
@@ -37,12 +39,20 @@
                 <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
                 <label for=""><a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> </label>
 
-
-
+                <td>
+                    <div class="btn-group" role="group">
+                    <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
+                    <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> 
+                    </div>
+                </td>
+            </tr>
                 @endforeach
              
 
-                 <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> 
+               <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> 
+
+               
+
 
 
             </tbody>

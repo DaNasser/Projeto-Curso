@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nome');
             $table->datetime('data');
             $table->string('grau_de_prioridade');
-            $table->string('status');
             $table->integer('user_id');
             $table->timestamps();
         });

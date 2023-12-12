@@ -110,7 +110,7 @@ h1 {
       
 
     
-        <form method="post" action="{{route('criar' )}}">
+        <form method="post" action="{{route('update')}}">
         @csrf
 
                 <label class='nome'> Nome da Tarefa
@@ -119,14 +119,12 @@ h1 {
                 <input name="data" type="date" class="form-control" value="{{$tarefas[0]->data}}" id="data" size="60" /></label><br />
                 <label class='grau_de_prioridade'>Grau de Prioridade:
                 <input name="grau_de_prioridade" type="text" class="form-control" value="{{$tarefas[0]->grau_de_prioridade}}" id="grau_de_prioridade" size="60" /></label><br />
-                <label class='status'>Status:
-                <input name="status" type="text" class="form-control" value="{{$tarefas[0]->status}}" id="status" size="60" /></label><br />
-        
+
     
 
             <!--butão pra salvar-->
             <label class='botao'>
-                <a href="http://127.0.0.1:8000/calendario"><button type="button" class="btn btn-light">Salvar</button></a>
+                <button type="button" class="btn btn-light">Salvar</button>
             </label>
           </form>
         </div>

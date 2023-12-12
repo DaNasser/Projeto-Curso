@@ -110,7 +110,7 @@ h1 {
       
 
     
-        <form method="post" action="{{route('store' )}}">
+        <form method="post" action="{{route('store')}}">
         @csrf
 
                 <label class='nome'> Nome da Tarefa
@@ -119,13 +119,12 @@ h1 {
                 <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
                 <label class='grau de prioridade'> Grau de Prioridade
                 <input name="grau_de_prioridade" type="text" class="form-control" id="grau_de_prioridade" size="60" maxlength="60" /></label><br />
-                <label class='status'> Status
-                <input name="status" type="text" class="form-control" id="status" size="60" maxlength="60" /></label><br />
 
-            <!--butão pra salvar-->
-            <label class='botao'>
-                <button type="submit" class="btn btn-light">Salvar</button>
-            </label>
+
+           
+            <div class='botao'>
+            <button type="submit" class="btn btn-light">Salvar</button>
+            </div>
           </form>
         </div>
     </body>

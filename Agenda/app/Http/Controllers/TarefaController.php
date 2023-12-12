@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Tarefa;
-use App\resources\views\auth;
+use Illuminate\Support\Facades\Facade;
 use Illuminate\Http\Request;
 
 class TarefaController extends Controller
@@ -18,11 +18,14 @@ class TarefaController extends Controller
     return view('tarefa');
    }
  public function store(Request $requer){
+   
     $tarefa = new tarefa();
     $tarefa->nome = $requer->input('nome');
     $tarefa->data = $requer->input('data');
+    $tarefa->grau_de_prioridade = $requer->input('grau_de_prioridade');
     $tarefa->user_id = Auth()->user()->id;
     $tarefa->save();
+    return redirect()->route('calendario');
 
    
     
@@ -30,13 +33,14 @@ class TarefaController extends Controller
 
 public function edit($id){
     $tarefa = tarefa::find($id);
-    return view('');
+    return view('editar');
    }
 
 public function update(Request $requer,$id){
     $tarefa =  tarefa::find($id);
     $tarefa->nome = $requer->input('nome');
     $tarefa->data = $requer->input('data');
+    $tarefa->grau_de_prioridade = $requer->input('grau_de_prioridade');
     $tarefa->update();
     
    }
