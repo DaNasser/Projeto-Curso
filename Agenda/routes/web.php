@@ -26,8 +26,8 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('calendario', [TarefaController::class, 'index'])->name('home');
 
-Route::get('criar/tarefa',[Controller::class,'tarefateste'])->name('tarefa');
-Route::post('criar',[Controller::class,'tarefa'])->name('criar');
+Route::post('criar/tarefa',[TarefaController::class,'create'])->name('tarefa');
+Route::get('criar',[TarefaController::class,'create'])->name('criar');
 Route::get('logout',[LoginController::class,'construct'])->name('logout');
 
 Route::get('editar/tarefa',[TarefaController::class,'edit'])->name('editar');

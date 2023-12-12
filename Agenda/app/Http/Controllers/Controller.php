@@ -11,25 +11,5 @@ use App\Models\Tarefa;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
-    public function criartarefa(){
-        return view("calendario");
-    }
 
-
-
-    public function tarefa(Request $request){
-
-         ($request->input('nome'));
-        $tarefas = new Tarefa();
-        $tarefas->nome = $request->input('nome');
-        $tarefas->data = $request->input('data');
-        $tarefas->save();
-        return redirect("calendario") -> with("sucesso","Tarefa cadastrada com sucesso");
-
-
-    }
-    public function tarefateste()
-    {
-        return view('tarefa');
-    } 
 }

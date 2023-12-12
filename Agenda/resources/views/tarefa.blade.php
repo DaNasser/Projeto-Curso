@@ -121,7 +121,7 @@ h1 {
 
             <!--butão pra salvar-->
             <label class='botao'>
-                <a href="http://127.0.0.1:8000/calendario"><button type="button" class="btn btn-light">Salvar</button></a>
+                <a href="{{route('')}}"><button type="button" class="btn btn-light">Salvar</button></a>
             </label>
           </form>
         </div>

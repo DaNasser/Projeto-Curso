@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Tarefa;
 use App\resources\views\auth;
-
 use Illuminate\Http\Request;
 
 class TarefaController extends Controller
@@ -15,7 +14,7 @@ class TarefaController extends Controller
  }
 
  public function create(){
-    return view('');
+    return view('criar/tarefa');
    }
  public function store(Request $requer){
     $tarefa = new tarefa();
