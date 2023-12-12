@@ -24,6 +24,8 @@
                 @foreach ($tarefa as $tarefa)	
                 <td>{{$tarefa->nome}}</td> 
                 <td>{{$tarefa->data}}</td> 
+                <td>{{$tarefa->grau_de_prioridade}}</td> 
+                <td>{{$tarefa->status}}</td> 
 
                 @endforeach
              

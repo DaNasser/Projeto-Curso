@@ -29,7 +29,7 @@ body {
  
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(189, 47, 47) 50%, rgb(85, 35, 35) 50%);
+    background-image: linear-gradient(-60deg, rgb(61, 54, 54) 50%, rgb(85, 35, 35) 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -114,10 +114,15 @@ h1 {
         @csrf
 
                 <label class='nome'> Nome da Tarefa
-                <input name="nome" type="text" class="form-control" id="nome" value="" size="60" maxlength="60"
-                       onblur="pesquisacep(this.value);" /></label><br />
+                <input name="nome" type="text" class="form-control" id="nome" value="{{$tarefas[0]->nome}}" size="60" maxlength="60"/></label><br />
                 <label class='data'>Dia:
-                <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
+                <input name="data" type="date" class="form-control" value="{{$tarefas[0]->data}}" id="data" size="60" /></label><br />
+                <label class='grau_de_prioridade'>Grau de Prioridade:
+                <input name="grau_de_prioridade" type="text" class="form-control" value="{{$tarefas[0]->grau_de_prioridade}}" id="grau_de_prioridade" size="60" /></label><br />
+                <label class='status'>Status:
+                <input name="status" type="text" class="form-control" value="{{$tarefas[0]->status}}" id="status" size="60" /></label><br />
+        
+    
 
             <!--butão pra salvar-->
             <label class='botao'>

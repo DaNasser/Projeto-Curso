@@ -117,6 +117,10 @@ h1 {
                 <input name="nome" type="text" class="form-control" id="nome" size="60" maxlength="60" /></label><br />
                 <label class='data'>Dia:
                 <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
+                <label class='grau de prioridade'> Grau de Prioridade
+                <input name="grau_de_prioridade" type="text" class="form-control" id="grau_de_prioridade" size="60" maxlength="60" /></label><br />
+                <label class='status'> Status
+                <input name="status" type="text" class="form-control" id="status" size="60" maxlength="60" /></label><br />
 
             <!--butão pra salvar-->
             <label class='botao'>
