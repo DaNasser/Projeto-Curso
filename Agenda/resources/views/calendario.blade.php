@@ -29,15 +29,15 @@
 
 
 
-               // <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> \\
-               // <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> \\
+            <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
+            <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> 
 
 
 
                 @endforeach
              
 
-                // <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> \\
+                <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> 
 
 
             </tbody>

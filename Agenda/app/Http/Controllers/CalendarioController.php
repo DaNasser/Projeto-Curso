@@ -20,7 +20,7 @@ class CalendarioController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function calendario()
+    public function index()
     {
         return view('calendario');
     }

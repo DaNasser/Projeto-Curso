@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Tarefa;
-use App\resources\views\auth;
+use Illuminate\Support\Facades\Facade;
 use Illuminate\Http\Request;
 
 class TarefaController extends Controller
