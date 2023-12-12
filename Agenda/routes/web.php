@@ -31,4 +31,5 @@ Route::post('store',[TarefaController::class,'store'])->name('store');
 Route::redirect('/store', '/calendario');
 Route::get('logout',[LoginController::class,'construct'])->name('logout');
 
-Route::get('editar/tarefa',[TarefaController::class,'edit'])->name('editar');
+Route::get('editar{id}',[TarefaController::class,'edit'])->name('editar');
+Route::get('deletar{id}',[TarefaController::class,'deletar'])->name('deletar');

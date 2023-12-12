@@ -25,12 +25,25 @@
                 <td>{{$tarefa->nome}}</td> 
                 <td>{{$tarefa->data}}</td> 
 
+
+
+               // <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> \\
+               // <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> \\
+
+
+
                 @endforeach
              
+
+                // <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> \\
+
+
             </tbody>
         </table>
 
         <a href="{{route('criar' )}}" ><button class="btn btn-primary" onclick="addTask()">Adicionar Tarefa</button></a>
+
+
     </div>
 
     <script>
