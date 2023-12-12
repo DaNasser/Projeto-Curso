@@ -10,6 +10,7 @@ use App\Http\Controllers\Auth\LoginController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +25,7 @@ use App\Http\Controllers\Auth\LoginController;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('calendario', [TarefaController::class, 'index'])->name('home');
+Route::get('agenda', [TarefaController::class, 'index'])->name('home');
 
 Route::get('criar',[TarefaController::class,'create'])->name('criar');
 Route::post('store',[TarefaController::class,'store'])->name('store');

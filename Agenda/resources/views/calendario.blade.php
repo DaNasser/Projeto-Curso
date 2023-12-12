@@ -6,6 +6,11 @@
     <title>Agenda</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+
+
+</style>
+
 </head>
 <body>
     <div id='wrap'>
@@ -29,15 +34,15 @@
 
 
 
-               // <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> \\
-               // <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> \\
+                <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
+                <label for=""><a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> </label>
 
 
 
                 @endforeach
              
 
-                // <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> \\
+                 <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> 
 
 
             </tbody>
