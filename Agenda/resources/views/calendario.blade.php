@@ -16,6 +16,7 @@
                     <th scope="col">Tarefa</th>
                     <th scope="col">Data</th>
                     <th scope="col">Grau de Prioridade</th>
+					<th scope="col">Status da Tarefa</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>
@@ -29,7 +30,7 @@
             </tbody>
         </table>
 
-        <button class="btn btn-primary" onclick="addTask()">Adicionar Tarefa</button>
+        <a href="{{route('criar' )}}" ><button class="btn btn-primary" onclick="addTask()">Adicionar Tarefa</button></a>
     </div>
 
     <script>
