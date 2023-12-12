@@ -21,6 +21,7 @@
             </thead>
             <tbody>
                 @foreach ($tarefa as $tarefa)
+                <td>{{$tarefa->user_id}}</td>
                 <td>{{$tarefa->nome}}</td> 
                 <td>{{$tarefa->data}}</td> 
 
