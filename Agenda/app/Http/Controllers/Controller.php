@@ -12,4 +12,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
+    public function tarefa(){
+        return view ('criar/tarefa');
+    }
 }

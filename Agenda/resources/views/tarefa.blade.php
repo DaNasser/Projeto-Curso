@@ -110,18 +110,17 @@ h1 {
       
 
     
-        <form method="post" action="{{route('criar' )}}">
+        <form method="post" action="{{route('store' )}}">
         @csrf
 
                 <label class='nome'> Nome da Tarefa
-                <input name="nome" type="text" class="form-control" id="nome" value="" size="60" maxlength="60"
-                       onblur="pesquisacep(this.value);" /></label><br />
+                <input name="nome" type="text" class="form-control" id="nome" size="60" maxlength="60" /></label><br />
                 <label class='data'>Dia:
                 <input name="data" type="date" class="form-control"  id="data" size="60" /></label><br />
 
             <!--butão pra salvar-->
             <label class='botao'>
-                <a href="{{route('')}}"><button type="button" class="btn btn-light">Salvar</button></a>
+                <button type="submit" class="btn btn-light">Salvar</button>
             </label>
           </form>
         </div>
