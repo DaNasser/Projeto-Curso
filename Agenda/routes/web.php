@@ -23,13 +23,12 @@ use App\Http\Controllers\Auth\LoginController;
 
 Auth::routes();
 
-Route::get('/', [CalendarioController::class, 'index'])->name('home');
-Route::get('calendario', [TarefaController::class, 'index'])->name('home');
+Route::get('/', [TarefaController::class, 'index'])->name('home');
+Route::get('calendario', [TarefaController::class, 'index'])->name('calendario');
 
 Route::get('criar',[TarefaController::class,'create'])->name('criar');
-
 Route::post('store',[TarefaController::class,'store'])->name('store');
-Route::redirect('/store', '/calendario');
+
 
 Route::get('logout',[LoginController::class,'construct'])->name('logout');
 Route::get('editar',[TarefaController::class,'edit'])->name('editar');
