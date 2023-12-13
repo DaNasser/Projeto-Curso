@@ -48,6 +48,7 @@ public function update(Request $requer,$id){
    public function deletar($id){
     $tarefa =  tarefa::find($id);
     $tarefa->delete();
+    return redirect("calendario")->with("danger","Deletado com sucesso");
 
    }
 }

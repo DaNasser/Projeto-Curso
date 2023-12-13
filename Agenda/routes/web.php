@@ -32,5 +32,5 @@ Route::post('store',[TarefaController::class,'store'])->name('store');
 
 
 Route::get('logout',[LoginController::class,'construct'])->name('logout');
-Route::get('editar',[TarefaController::class,'edit'])->name('editar');
-Route::get('deletar',[TarefaController::class,'deletar'])->name('deletar');
+Route::get('editar/{id}',[TarefaController::class,'edit'])->name('editar');
+Route::get('deletar/{id}',[TarefaController::class,'deletar'])->name('deletar');
