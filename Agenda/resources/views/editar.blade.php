@@ -117,12 +117,13 @@ h1 {
                 <input name="nome" type="text" value="{{$tarefa->nome}}" class="form-control" id="nome" size="60" maxlength="60" /></label><br />
                 <label class='data'>Dia:
                 <input name="data" type="date" value= "{{$tarefa->data}}"  id="data" size="60" /></label><br />
-                <label class='grau de prioridade'> Grau de Prioridade
+                <label class='gdp'> Grau de Prioridade
                 <input name="grau_de_prioridade" type="text" value="{{$tarefa->grau_de_prioridade}}" class="form-control" id="grau_de_prioridade" size="60" maxlength="60" /></label><br />
 
 
            
             <div class='botao'>
+                
             <button type="submit" class="btn btn-light">Salvar</button>
             </div>
           </form>
