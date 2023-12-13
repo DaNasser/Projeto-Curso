@@ -9,8 +9,8 @@ class TarefaController extends Controller
 {
    
  public function index(){
-    $tarefa  = tarefa::where('user_id',Auth()->user()->id)->get();
-  
+   $tarefa  = tarefa::where('user_id',Auth()->user()->id)->get();
+ 
   return view('calendario', compact('tarefa'));
  }
 

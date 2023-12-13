@@ -34,11 +34,6 @@
 
                 <td>{{$tarefa->status}}</td> 
 
-
-
-                <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
-                <label for=""><a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> </label>
-
                 <td>
                     <div class="btn-group" role="group">
                     <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
