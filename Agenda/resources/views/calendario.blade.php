@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
-
+.sair{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
 
 </style>
 
@@ -34,9 +38,6 @@
 
                 <td>{{$tarefa->status}}</td> 
 
-
-
-            
                 <td>
                     <div class="btn-group" role="group">
                     <a href="{{route('editar',$tarefa->id)}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
@@ -46,9 +47,9 @@
             </tr>
                 @endforeach
              
-
+                <div class="sair">
                <a href="{{route('logout')}}" ><button class="btn btn-primary" onclick="addTask()">Sair</button></a> 
-
+            </div>
                
 
 
