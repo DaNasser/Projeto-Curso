@@ -10,8 +10,16 @@
             <style>
                 
 
-                body{
-                    background-color:slategray;
+                body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
                 }
                 .tamanho{
                     position: absolute;
@@ -22,22 +30,24 @@
                 html {
     height:100%;
 }
- 
-body {
-    margin:0;
+.login {
+
+background-color: #212121;
+width: 650px;
+height: 545px;
+padding: 35px;
+
+border-radius: 10px;
 }
- 
-.bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(189, 47, 47) 50%, rgb(85, 35, 35) 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-}
+header {
+            background-color: #181920;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
  
 .bg2 {
     animation-direction:alternate-reverse;
@@ -75,10 +85,17 @@ h1 {
     }
 }
 
+
+.gdp{
+    position: absolute;
+    left: 35%;
+    top: 30%
+}
+
 .nome {
     position: absolute;
     left: 35%;
-    top: 30%;
+    top: 22%;
 }
 
 .data {
@@ -92,6 +109,13 @@ h1 {
     left: 35%;
     top: 47%
     
+}
+
+.arealogin {
+display: flex;
+height: 100vh;
+justify-content: center;
+align-items: center;
 }
 
             </style>
@@ -113,13 +137,18 @@ h1 {
         <form method="post" action="{{route('update', $tarefa)}}">
         @csrf
 
+
+        <section class="arealogin" >
+            <div class="login">
                 <label class='nome'> Nome da Tarefa
                 <input name="nome" type="text" value="{{$tarefa->nome}}" class="form-control" id="nome" size="60" maxlength="60" /></label><br />
                 <label class='data'>Dia:
-                <input name="data" type="date" value= "{{$tarefa->data}}"  id="data" size="60" /></label><br />
+                    <input name="data" type="date" value="{{$tarefa->grau_de_prioridade}}" class="form-control"  id="data" size="60" /></label><br />
                 <label class='gdp'> Grau de Prioridade
                 <input name="grau_de_prioridade" type="text" value="{{$tarefa->grau_de_prioridade}}" class="form-control" id="grau_de_prioridade" size="60" maxlength="60" /></label><br />
-
+            
+            </div>
+        </section>
 
            
             <div class='botao'>
