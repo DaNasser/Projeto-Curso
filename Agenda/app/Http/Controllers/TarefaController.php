@@ -33,7 +33,7 @@ class TarefaController extends Controller
 
 public function edit($id){
     $tarefa = tarefa::find($id);
-    return view('editar');
+    return view('editar', compact('tarefa'));
    }
 
 public function update(Request $requer,$id){
@@ -42,6 +42,7 @@ public function update(Request $requer,$id){
     $tarefa->data = $requer->input('data');
     $tarefa->grau_de_prioridade = $requer->input('grau_de_prioridade');
     $tarefa->update();
+    return redirect()->route('calendario');
     
    }
 
