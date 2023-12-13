@@ -29,8 +29,8 @@
 
                 <td>
                     <div class="btn-group" role="group">
-                    <a href="{{route('editar')}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
-                    <a href="{{route('deletar')}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> 
+                    <a href="{{route('editar',$tarefa->id)}}" ><button class="btn btn-primary" onclick="addTask()">Editar</button></a> 
+                    <a href="{{route('deletar',$tarefa->id)}}" ><button class="btn btn-primary" onclick="addTask()">Deletar</button></a> 
                     </div>
                 </td>
             </tr>
